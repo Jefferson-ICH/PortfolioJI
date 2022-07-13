@@ -1,0 +1,40 @@
+.features .box{
+    padding: 20px;
+
+}
+.features .box h2{
+    margin: 20px 0 20px 0;
+}
+.features .box p{
+    word-spacing: 2px;
+    transition: 0.5s;
+}
+.features .box i{
+    font-size: 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.features .box:hover p{
+    color: white;
+}
+.features .box:hover i{
+    color: #ffffff;
+    opacity: 1;
+}
+.btn_shadowf{
+    padding: 18px 20px  ;
+    border-radius: 6px;
+    transition: 0.5s all ease;
+    cursor:pointer;
+    color: #000000;
+  }
+  .btn_shadowf{
+    background: linear-gradient( 145deg ,#a9c5c5,#ffffff);
+    box-shadow: 4px 4px 8px #b5c1c0, 4px -4px 8px #ffffff;
+  }
+  .btn_shadowf:hover{
+    background : #30a7a7;
+    color: #ffffff;
+    transform: translateY(-9px);
+  }
