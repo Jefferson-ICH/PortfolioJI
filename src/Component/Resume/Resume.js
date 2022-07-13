@@ -17,7 +17,7 @@ const Resume = () => {
             <div className='left'>
               <div className='heading'>
                  
-                <h1>Educación-Cursos y Certificados</h1>
+                <h1>Educación-Certificados</h1>
               </div>
 
               <div className='content'>
@@ -44,7 +44,7 @@ const Resume = () => {
             </div>
             <div className='left'>
               <div className='heading'> 
-                <h1>Experiencia Laboral - Colaboraciones</h1>
+                <h1>Ámbito Laboral y Colaboraciones</h1>
               </div>
 
               <div className='content'>

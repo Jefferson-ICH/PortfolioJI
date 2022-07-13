@@ -38,7 +38,7 @@ const Contact = () => {
         <div className='container top'>
           <div className='heading text-center'>
             <h4>CONTACTO</h4>
-            <h1>Comunicate Conmigo</h1>
+            <h1>Comunícate Conmigo</h1>
           </div>
 
           <div className='content d_flex'>
@@ -49,20 +49,20 @@ const Contact = () => {
                 </div>
                 <div className='details'>
                   <h1>Jefferson Itas</h1>
-                  <p>Ingeniero en Infromática y Sistemas Computacionales.</p>
-                  <p>Comunicate conmigo:</p> <br />
+                  <p>Ingeniero en Informática y Sistemas Computacionales.</p>
+                  <p>Comunícate conmigo:</p> <br />
                   <p>Celular: +593 962764718</p>
                   <p>Email: xavi30a@gmail.com</p> <br />
                   <span>Redes Sociales</span>
                   <div className='button f_flex'>
-                    <button className='btn_shadow'>
-                      <i className='fab fa-facebook-f'></i>
+                    <button className='btn_shadow'><a href="https://www.facebook.com/jefferson.javierI"> 
+                      <i className='fab fa-facebook-f'></i></a>
                     </button>
-                    <button className='btn_shadow'>
-                      <i className='fab fa-instagram'></i>
+                    <button className='btn_shadow'><a href="https://www.instagram.com/accounts/login/?next=/jefferson30n/">
+                      <i className='fab fa-instagram'></i></a>
                     </button>
-                    <button className='btn_shadow'>
-                      <i className='fab fa-twitter'></i>
+                    <button className='btn_shadow'><a href="https://twitter.com/isjeff96">
+                      <i className='fab fa-twitter'></i></a>
                     </button>
                   </div>
                 </div>

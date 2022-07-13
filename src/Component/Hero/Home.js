@@ -4,7 +4,7 @@ import hero from "../pic/H1.svg"
 import skill1 from "../pic/autodidacta.png"
 import skill2 from "../pic/liderazgo.png"
 import skill3 from "../pic/equipo.png"
-import {Typewriter} from "react-simple-typewriter"
+import Typewriter from 'typewriter-effect';
 
 const Home = () => {
   return (
@@ -16,10 +16,17 @@ const Home = () => {
                 <h1>Hi, I'm <span>Jefferson Itas</span></h1>
                 <h2>
                 <span >
-                <Typewriter words={["Analista de Datos", " Desarrollador Web (FrontEnd)", "Ciberseguridad"]} loop  cursor cursorStyle='>' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
+                <Typewriter 
+                   options={{
+                    strings: ['Analista de Datos', 'Front End Developer','Seguridad Informática'],                    
+                    autoStart: true, 
+                    loop: 75, 
+                  }}
+                 />
               </span>
                 </h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque possimus eius animi magni ad, dolorum porro, ab quo soluta deleniti similique aut quas blanditiis voluptatibus. At harum perferendis corporis dolore?</p>
+                <p>Profesional en el Area de las Tecnologías de Información y Comunicación. 
+                Manejo de sistemas informáticos,Desarrollo de Páginas Web Modernas Infomativas. Seguridad de la información. Análisis y Reporte de Datos</p>
                 <div className="hero_btn d_flex">
                     <div className="col_1">
                     <h4>Búscame en </h4>

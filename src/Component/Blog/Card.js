@@ -55,7 +55,7 @@ const Card = (props) => {
                 <i class='fas fa-times'></i>
               </button>
 
-              {/*---------Leave Message----------  */}
+              {/* ---------Leave Message---------- 
               <div className='contact mtop'>
                 <h1>Leave a Reply</h1>
 
@@ -71,8 +71,8 @@ const Card = (props) => {
                   </div>
                 </form>
               </div>
-              {/*---------Leave Message----------  */}
-            </div>
+              {/*---------Leave Message----------  */}  
+              </div>
           </div>
         </div>
       )}
