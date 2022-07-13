@@ -8,7 +8,7 @@ const Portfolio_data = [
     },
     {
       id: 2,
-      category: "Web Developer Front End UX/XI",
+      category: "Web Developer Front End UX/UI",
       totalLike: "10",
       title: "Diseño y desarrollo de páginas web informativas con gran usabilidad e interacción.",
       image: require('./image/WEBfrontend.webp'),
