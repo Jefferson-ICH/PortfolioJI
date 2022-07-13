@@ -2,7 +2,7 @@ const data =[
     {
         id:1,
         image: " https://img.icons8.com/dotty/80/000000/upload-link-document.png",
-        title: "Analisis de Data",
+        title: "Análisis de Data",
         desc: "Recopilar información ,para analizarlos de forma estratégica para establecer objetivos dentro de la empresa.",
     },
     {
