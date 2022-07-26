@@ -2,7 +2,7 @@ const BlogApi = [
   {
     id: 1,
     image: require('./image/google trends.webp'),
-    date: "2 Marzo , 2022",
+    date: "02 Marzo , 2022",
     title_one: "Google Trends una herramienta muy importante.",
     desc_one: "Nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.",
     
