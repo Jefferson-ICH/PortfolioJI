@@ -1,37 +1,31 @@
-import React, { useState } from "react"
+import React, { useState } from 'react';
 import contact1 from "./2.png"
 import "./Contact.css"
+import emailjs from "emailjs-com"
+import swal from 'sweetalert';
 
 const Contact = () => {
-  const [data, setData] = useState({
-    fullname: "",
-    phone: "",
-    email: "",
-    subject: "",
-    message: "",})
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  const InputEvent = (event) => {
-    const { name, value } = event.target
+    emailjs.sendForm('service_sbptq2k', 'template_kbim219', e.target, 'JtN5WZTNKLoyopiBS')
+      .then((result) => {
+        swal({
+          title:"OK",
+          text:"Su mensaje fue enviado correctamente..!",
+          icon:"success" 
+        });
+      }, (error) => {
+        swal({
+          title:"Oopss..",
+          text:"Su mensaje no fue enviado ",
+          icon:"error"
+        });
+      });
+      e.target.reset()
+  };
 
-    setData((preVal) => {
-      return {
-        ...preVal,
-        [name]: value,
-      }
-    })
-  }
-
-  const formSubmit = (event) => {
-    event.preventDefault()
-    alert(
-      `My name is ${data.fullname}. 
-	My phone number is ${data.phone}. 
-	My email address is ${data.email}. 
-	My Subject on  ${data.subject}. 
-	Here is my message I want to say : ${data.message}. 
-	`
-    )
-  }
+  
   return (
     <>
       <section className='Contact' id='contact'>
@@ -70,32 +64,14 @@ const Contact = () => {
             </div>
 
             <div className='right box_shodow'>
-              <form onSubmit={formSubmit}>
-                <div className='f_flex'>
-                  <div className='input row'>
-                    <span>Nombre</span>
-                    <input type='text' name='fullname' value={data.fullname} onChange={InputEvent} />
-                  </div>
-                  <div className='input row'>
-                    <span>Celular/Phone</span>
-                    <input type='number' name='phone' value={data.phone} onChange={InputEvent} />
-                  </div>
-                </div>
-                <div className='input'>
-                  <span>Correo Electrónico </span>
-                  <input type='email' name='email' value={data.email} onChange={InputEvent} />
-                </div>
-                <div className='input'>
-                  <span>Asunto </span>
-                  <input type='text' name='subject' value={data.subject} onChange={InputEvent} />
-                </div>
-                <div className='input'>
-                  <span>Tu mensaje </span>
-                  <textarea cols='30' rows='10' name='message' value={data.message} onChange={InputEvent}></textarea>
-                </div>
-                <button className='btn_shadow'>
-                  Enviar <i className='fas fa-arrow-right'></i> 
-                </button>
+                <form ref={Contact} onSubmit={sendEmail}>
+                <label>Name</label>
+                <input type="text" name="user_name" />
+                <label>Email</label>
+                <input type="email" name="user_email" />
+                <label>Message</label>
+                <textarea name="message" />
+                <input type="submit" value="Send" />
               </form>
             </div>
           </div>
@@ -105,4 +81,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact 

@@ -6,7 +6,7 @@ import Portfolio from './Component/Portfolio/Portfolio'
 import Resume from './Component/Resume/Resume'
 import Blog  from  './Component/Blog/Blog'
 import Contact from './Component/Contact/Contact'
-import Footer from "./Component/Footer"
+import Footer from "./Component/Footer" 
 import FloatingWhatsApp from 'react-floating-whatsapp' 
 
  
