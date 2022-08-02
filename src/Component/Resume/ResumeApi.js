@@ -55,6 +55,8 @@ const ResumeApi = [
     desc: "Implementar un aplicativo web para la Institución y darse a conocer los servicios que realizan , Manejo de Bases de Datos y herramientas de análisis de datos DB. Atender y Recibir archivos, documentación.",
     rate: "",
   },
+
+  
    
    
 ]
