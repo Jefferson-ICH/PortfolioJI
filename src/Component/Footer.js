@@ -11,7 +11,7 @@ const Footer = () => {
           </div>
           <p>© 2022 <Typewriter 
                    options={{
-                    strings: ['Jefferson Itas  by Wetkay.'],                    
+                    strings: ['Desarrollado por Jefferson Itas.'],                    
                     autoStart: true, 
                     loop: 75, 
                   }}

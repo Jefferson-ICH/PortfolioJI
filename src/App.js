@@ -35,6 +35,7 @@ import './App.css'
         placeholder="Escribir mensaje para Jefferson.."
         notificationDelay={60000} // 1 minute
        />
+       
 
   </>
   )
